@@ -1,0 +1,92 @@
+nav{
+    display: flex;
+  align-content:flex-end;
+  align-items: center;
+  justify-content:space-between;
+  padding: 1.2rem 7%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.nav-item a{ 
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+.nav-item a:hover,
+.nav-item a.active{
+    color: black;
+}
+
+.logo{
+    height:48px ;
+    width:48px ;
+    background-image: url("../img/home2.png");
+    background-size:cover;
+    border-radius: 50%;
+}
+.logoicon{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 700px;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    }
+
+body {
+    font-family: "REM", sans-serif;
+    background-color: bisque;
+    color: white;
+     min-height: 2000px;
+    background-image: url("../img/home.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;   
+    }
+
+.border-solid {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #333;
+    }
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .home-content{
+    max-width: 7000px;
+    padding: 3%;
+    justify-content:flex-end;
+    
+}
+
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.services{
+    background-color:yellowgreen ;
+    padding:6rem 0;
+}
