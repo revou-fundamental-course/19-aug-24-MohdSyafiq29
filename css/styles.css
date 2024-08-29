@@ -2,7 +2,7 @@
 
 :root{
 --primaryTextColor: #232e35;
---secondaryTextColor: #656d72;
+--secondaryTextColor: #00ff00;
 
 --borderColor: #f1f1f1;
 --lineColor: #d9d9d9;
@@ -29,8 +29,12 @@ body {
     font-family: "Roboto", sans-serif ;
 }
 
-h1,h2,h3,h4,h5,h6, strong{ 
-    color: var(--primaryTextColor);
+h2,h3,h4,h5,h6, strong{ 
+    color: var(--primaryIconColorHover);
+}
+
+h1 {
+    color:burlywood;
 }
 
 p {
@@ -38,7 +42,7 @@ p {
     line-height: 1.9rem;
 }
 
-p, label, input, textarea, li {
+label, li {
     color: var(--secondaryTextColor);
 }
 
@@ -65,7 +69,7 @@ a {
 .pre-title{
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    color: var(--secondaryTextColor);
+    color: var(--primaryIconColor);
     position: relative;
     padding-left: 40px;
     width: fit-content;
@@ -123,17 +127,25 @@ nav ul li a {
 }
 
 #hero{
-    height: 520px;
+    height: 720px;
     bottom: 4rem;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
+    background-image: url("../img/home.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;  
+    padding: 5rem 7rem; 
+    
+
 }
 
 .hero-name {
     font-size: 3rem;
     font-weight: 700;
     margin: 0.5rem 0 1rem;
+}
+
+.hero-name span{
+    color:var(--primaryIconColorHover);
 }
 
 .hero-right img{
@@ -205,3 +217,12 @@ nav ul li a {
     background-color: var(--secondaryBackgroundColor);
 }
 
+.output{
+    width: 100%;
+    background-color: grey;
+}
+
+.content p{
+    font-size: 1rem;
+    color:white
+}
